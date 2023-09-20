@@ -1,0 +1,7 @@
+export enum FeaturesEnum {
+  USER = 'USER',
+  ROLE = 'ROLE',
+  USER_PERMISSION = 'USER_PERMISSION',
+  ROLE_PERMISSION = 'ROLE_PERMISSION',
+  USER_ROLE = 'USER_ROLE'
+}

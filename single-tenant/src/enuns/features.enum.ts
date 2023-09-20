@@ -1,0 +1,12 @@
+export enum FeaturesEnum {
+  USER = '0be21a7d-36a2-4dc8-a7db-54cffc499093',
+  USER_ROLE = 'e13c4cac-f47d-40f1-b809-61908ee62da4',
+  USER_ABRANGENCY = '8a778005-1631-42d2-ba86-e677e7a03607',
+  SUPPLIER = 'b03277e9-4ca6-4b7b-982d-83bf766337a4',
+  CONTACT = 'b167c4ea-8fa5-49a9-bd8a-2067ceb9a6cb',
+  WORK = 'a6dcebd3-766a-4ecb-84a0-19b15cf1363b',
+  COST_CENTER = '17be8ded-8952-4530-b60f-92613bd36ccc',
+  PLAN_ACCOUNT = '6eb25ef5-09b0-462e-9bdf-dce7d5986c29',
+  BANK_ACCOUNT = '5c14c942-0f8f-4ab8-933b-5885cd331d38',
+  EXPENSE = 'c332e84a-0bf3-4680-bf04-4970fcbf3076'
+}

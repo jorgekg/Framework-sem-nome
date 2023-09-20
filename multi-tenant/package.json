@@ -1,0 +1,55 @@
+{
+  "name": "belli",
+  "version": "1.0.0",
+  "description": "Serverless aws-nodejs-typescript template",
+  "main": "serverless.ts",
+  "scripts": {
+    "migrate": "node config/migrate.js",
+    "migrate:undo": "node config/unmigrate.js",
+    "create-tenant": "node config/create-tenant.js && npm run migrate",
+    "start": "set NODE_OPTIONS=--max-old-space-size=10000 && sls offline --httpPort 4001 --lambdaPort 4000  --host 0.0.0.0",
+    "deploy": "set NODE_OPTIONS=--max-old-space-size=10000 && sls deploy"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {
+    "@middy/core": "^1.5.2",
+    "@middy/http-json-body-parser": "^1.5.2",
+    "aws-sdk": "^2.1440.0",
+    "axios": "^0.26.1",
+    "express": "^4.17.2",
+    "firebase-admin": "^10.3.0",
+    "jsonwebtoken": "^9.0.1",
+    "moment": "^2.29.1",
+    "npm": "^9.8.1",
+    "odata-sequelize": "^1.0.21",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "6.32.1",
+    "serverless-http": "^2.7.0",
+    "umzug": "^2.3.0",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^3.30.1",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/node": "^14.18.5",
+    "@types/uuid": "^8.3.4",
+    "@types/validator": "^13.7.1",
+    "esbuild": "^0.17.19",
+    "json-schema-to-ts": "^1.5.0",
+    "sequelize-cli": "^6.3.0",
+    "serverless": "^3.34.0",
+    "serverless-esbuild": "^1.46.0",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.5",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.9.5"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}

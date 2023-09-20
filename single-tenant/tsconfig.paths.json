@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lambdas/*": ["src/aws-lambdas/*"],
+      "@libs/*": ["src/libs/*"],
+      "@handlers/*": ["src/handlers/*"],
+      "@exceptions/*": ["src/exceptions/*"],
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
+      "@enuns/*": ["src/enuns/*"]
+    }
+  }
+}
