@@ -78,20 +78,7 @@ Senha: ${(entity as any).password}
 
   public async resetPassword(email: string) {
     const link = await admin.auth().generatePasswordResetLink(email);
-
-    await axios.post('https://qfqun7q0vi.execute-api.us-east-1.amazonaws.com/Prod/email', {
-
-      email: email,
-      message: `Olá!
-
-Clique no link abaixo para redefinir sua senha.
-
-${link}
-
-Caso tenha algum problema para acessar, fale com o responsável pelo sistema.
-          `,
-      subject: "Solicitação de troca de senha - Nome sistema"
-    });
+    console.log(link);
   }
 
   public async getUserByEmail(email: string) {
